@@ -47,32 +47,29 @@ This project emphasizes clean architecture, predictable state management, and pr
 
 ---
 
-## Project Structure
+# Project Structure
+
+```
+Event_Attendee
+├── app/                    # Next.js App Router pages, layouts, and API routes
+│   ├── api/                # Backend API routes (events, attendees)
+│   └── events/             # Event-related pages (list, details, create)
+├── components/             # Reusable UI and form components
+│   ├── forms/              # Event and attendee form components
+│   └── ui/                 # Shared UI primitives (buttons, cards, skeletons)
+├── lib/                    # Core application logic and utilities
+│   ├── api/                # Client-side API helpers
+│   ├── hooks/              # Custom React and TanStack Query hooks
+│   ├── validators/         # Zod schemas for validation
+│   └── types/              # Shared TypeScript types
+├── prisma/                 # Database schema and migrations
+├── public/                 # Static assets
+├── .env                    # Environment variables (not committed)
+├── config files            # Next.js, Tailwind, ESLint, and tooling configs
+└── README.md               # Project documentation
 
 ```
 
-app/
-api/                # API routes (events, attendees)
-events/             # Event pages (list, detail, create)
-layout.tsx          # Root layout
-providers.tsx       # React Query provider
-
-components/
-forms/              # Event and Attendee forms
-ui/                 # shadcn UI components
-
-lib/
-api/                # Client-side API helpers
-hooks/              # TanStack Query hooks
-validators/         # Zod schemas
-prisma.ts           # Prisma client singleton
-queryClient.ts      # QueryClient configuration
-
-prisma/
-schema.prisma       # Database schema
-migrations/         # Prisma migrations
-
-```
 
 ---
 
@@ -167,10 +164,10 @@ The application will be available at `http://localhost:3000`.
 
 ## Demo
 
-A short walkthrough video demonstrating the core functionality and architectural decisions accompanies this submission.
+Demo video:
+[https://drive.google.com/your-demo-video-link](https://drive.google.com/)
 
 ---
-
 ## Author
 
 Aakif Mir
