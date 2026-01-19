@@ -165,7 +165,7 @@ The application will be available at `http://localhost:3000`.
 ## Demo
 
 Demo video:
-[https://drive.google.com/your-demo-video-link](https://drive.google.com/)
+[demo-video-link](https://drive.google.com/)
 
 ---
 ## Author
